@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLOB - Giving back to the hood</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#05070a;color:#fff;font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:linear-gradient(to bottom,rgba(5,7,10,0.95),transparent);backdrop-filter:blur(8px)}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#ff1a1a;text-decoration:none;font-size:18px}.logo img{width:32px;height:32px;border-radius:50%;object-fit:cover}
+.btn{border-radius:999px;padding:9px 16px;font-size:11px;font-weight:800;border:1px solid #222;background:#111;color:#fff;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;transition:0.2s;cursor:pointer}
+.btn:hover{transform:translateY(-1px)}.btn-lime{background:#d9ff00;color:#000;border-color:#d9ff00}
+.hero{height:100vh;position:relative;display:flex;flex-direction:column;align-items:center;background:radial-gradient(ellipse at 50% 0%,#1a1f2e 0%,#05070a 70%);overflow:hidden}
+.hero-title{margin-top:78px;text-align:center;z-index:5}
+.hero-title h1{font-family:Syne,sans-serif;font-size:64px;font-weight:800;color:#ff1a1a;letter-spacing:-2px}
+.hero-title p{opacity:0.8;margin-top:6px;font-size:14px}
+.ca-box{margin-top:14px;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);padding:8px 12px;border-radius:999px;z-index:6;backdrop-filter:blur(10px)}
+.ca-box span{font-family:'JetBrains Mono',monospace;font-size:11px;opacity:0.9}.ca-box button{background:#d9ff00;color:#000;border:none;border-radius:999px;padding:4px 10px;font-size:10px;font-weight:800;cursor:pointer}
+.klob-wrap{position:absolute;bottom:-3%;left:50%;transform:translateX(-50%);width:100vw;max-width:800px;height:78vh;display:flex;justify-content:center;align-items:end;z-index:2}
+.klob-img{width:100%;height:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 0 70px rgba(255,0,0,0.5));animation:float 4s ease-in-out infinite;cursor:zoom-in}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.water{position:absolute;bottom:0;left:0;right:0;height:35%;background:linear-gradient(to top,#020407 45%,transparent);z-index:3}
+.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:6;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.6}.scroll span{font-size:10px;letter-spacing:4px}
+.red{background:#ff1212;min-height:100vh;padding:90px 20px;display:flex;flex-direction:column;align-items:center;z-index:4}
+.red-inner{width:100%;max-width:1100px}
+.big{font-family:Syne;font-size:clamp(38px,6vw,60px);line-height:0.88;color:#000;font-weight:800}.big span{color:#fff}
+.sub{margin-top:28px;max-width:540px}.sub h3{font-family:Syne;font-size:24px;color:#000}.sub p{font-size:14px;margin-top:12px;line-height:1.6;color:#000}
+.box{margin-top:22px;background:#000;color:#fff;padding:24px;border-radius:16px;max-width:540px;font-size:14px;line-height:1.7}.box b{color:#ff1a1a}
+.join{background:#08090d;padding:90px 20px;text-align:center;min-height:100vh}
+.join-inner{max-width:640px;margin:0 auto}
+.join img.main{width:260px;margin:0 auto 20px;display:block;border-radius:20px;cursor:zoom-in}
+.join h2{font-family:Syne;font-size:38px}.join p{font-size:14px;opacity:0.6;margin:12px auto 24px;max-width:460px;line-height:1.6}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.reveal{opacity:0;transform:translateY(30px);transition:0.7s ease}.reveal.active{opacity:1;transform:translateY(0)}
+footer{padding:30px 20px;text-align:center;font-size:10px;opacity:0.3}
+.ca-big{margin-top:18px;background:#111;border:1px solid #222;padding:14px;border-radius:12px;font-family:'JetBrains Mono',monospace;font-size:12px;word-break:break-all;display:flex;flex-direction:column;gap:8px}
+.ca-big button{align-self:center}
+</style>
+</head>
+<body>
+<div class="nav">
+<a class="logo" href="#"><img src="https://i.ibb.co.com/d4hBg8zF/IMG-20261104-WA7834.jpg"> KLOB</a>
+<div style="display:flex;gap:8px">
+<a class="btn" href="https://x.com/klobcoin" target="_blank">X</a>
+<a class="btn" href="https://t.me/klobcoin" target="_blank">JOIN</a>
+<a class="btn btn-lime" href="https://app.torchpad.fun/trade/robinhood/0x75d874378ae31b33ab9e7a40b4dca96134221111" target="_blank">BUY $KLOB</a>
+</div>
+</div>
+
+<section class="hero">
+<div class="hero-title"><h1>KLOB</h1><p>Giving back to the hood.</p>
+<div class="ca-box"><span>0xffbe...7194</span><button onclick="copyCA()">COPY CA</button><a class="btn btn-lime" style="padding:4px 10px;font-size:10px" href="https://app.torchpad.fun/trade/robinhood/0x75d874378ae31b33ab9e7a40b4dca96134221111" target="_blank">TRADE</a></div>
+</div>
+<div class="klob-wrap"><img class="klob-img" id="klobHero" src="https://i.ibb.co.com/d4hBg8zF/IMG-20261104-WA7834.jpg" onclick="window.open('https://i.ibb.co.com/d4hBg8zF/IMG-20261104-WA7834.jpg','_blank')"></div>
+<div class="water"></div>
+<div class="scroll"><span>SCROLL</span><div style="width:1px;height:20px;background:white"></div></div>
+</section>
+
+<section class="red">
+<div class="red-inner">
+<div class="big reveal">Meet <span>KLOB.</span><br>He runs the hood.</div>
+<div class="sub reveal"><h3>A test: is it the platform, or the people?</h3><p>Everyone says memes on Robinhood Chain are cooked. Bundles, dev dumps, and you end up as exit liquidity. So we built KLOB the honest way.</p></div>
+<div class="box reveal"><b>No bundle</b> - Nobody grabbed 30% before you.<br><br><b>No utility</b> - No app, no fake roadmap. Just a lobster from the hood.<br><br><b>No team bag</b> waiting to dump.<br><br>Pure community coin. CA: 0xffbe87856ebca31143a59b88db2726e773be7194</div>
+</div>
+</section>
+
+<section class="join">
+<div class="join-inner">
+<img class="main reveal" src="https://i.ibb.co.com/d4hBg8zF/IMG-20261104-WA7834.jpg" onclick="window.open('https://i.ibb.co.com/d4hBg8zF/IMG-20261104-WA7834.jpg','_blank')">
+<h2 class="reveal">Join the hood.</h2>
+<p class="reveal">Trade $KLOB on Torchpad. CA below - click to copy.</p>
+<div class="ca-big reveal"><div>0xffbe87856ebca31143a59b88db2726e773be7194</div><button class="btn btn-lime" onclick="copyCA()">COPY CA</button><a class="btn btn-lime" style="padding:12px 24px;margin-top:8px" href="https://app.torchpad.fun/trade/robinhood/0x75d874378ae31b33ab9e7a40b4dca96134221111" target="_blank">TRADE ON TORCHPAD</a></div>
+<div class="cta reveal" style="margin-top:20px">
+<a class="btn btn-lime" style="padding:14px 26px" href="https://x.com/klobcoin" target="_blank">FOLLOW @klobcoin</a>
+<a class="btn" style="padding:14px 26px" href="https://app.torchpad.fun/trade/robinhood/0x75d874378ae31b33ab9e7a40b4dca96134221111" target="_blank">CHART & BUY</a>
+</div>
+<footer class="reveal">© 2026 $KLOB - 0xffbe87856ebca31143a59b88db2726e773be7194 - <a href="https://app.torchpad.fun/trade/robinhood/0x75d874378ae31b33ab9e7a40b4dca96134221111" target="_blank" style="color:#d9ff00">Torchpad</a></footer>
+</div>
+</section>
+
+<script>
+var CA="0xffbe87856ebca31143a59b88db2726e773be7194";
+function copyCA(){navigator.clipboard.writeText(CA).then(function(){alert("CA copied: "+CA)});}
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add("active")})},{threshold:0.15});
+document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
+window.addEventListener("scroll",function(){var y=window.scrollY;var img=document.getElementById("klobHero");if(img)img.style.transform="translateY("+(y*0.18)+"px)"});
+</script>
+</body>
+</html>
