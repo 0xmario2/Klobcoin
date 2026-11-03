@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KLOB - Giving back to the hood</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{background:#05070a;color:#fff;font-family:'Space Grotesk',sans-serif;overflow-x:hidden}
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:linear-gradient(to bottom,rgba(5,7,10,0.9),transparent);backdrop-filter:blur(6px)}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;color:#ff1a1a;text-decoration:none;font-size:18px}.logo img{width:32px;height:32px;border-radius:50%;background:#000}
+.btn{border-radius:999px;padding:8px 14px;font-size:11px;font-weight:800;border:1px solid #222;background:#111;color:#fff;text-decoration:none;display:inline-flex;transition:0.2s;cursor:pointer}
+.btn-lime{background:#d9ff00;color:#000;border-color:#d9ff00}
+.hero{height:100vh;position:relative;display:flex;flex-direction:column;align-items:center;background:radial-gradient(ellipse at 50% 0%,#1a1f2e 0%,#05070a 65%);overflow:hidden}
+.hero-title{margin-top:78px;text-align:center;z-index:5}
+.hero-title h1{font-family:Syne,sans-serif;font-size:56px;font-weight:800;color:#ff1a1a}
+.hero-title p{opacity:0.8;margin-top:8px;font-size:14px}
+.klob-wrap{position:absolute;bottom:-5%;left:50%;transform:translateX(-50%);width:100vw;max-width:780px;height:76vh;display:flex;justify-content:center;align-items:end;z-index:2}
+.klob-img{width:100%;height:100%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 0 60px rgba(255,0,0,0.35));animation:float 4s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.water{position:absolute;bottom:0;left:0;right:0;height:32%;background:linear-gradient(to top,#020407 40%,rgba(2,4,7,0.7) 70%,transparent);z-index:3}
+.scroll{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:6;display:flex;flex-direction:column;align-items:center;gap:6px;opacity:0.6}.scroll span{font-size:10px;letter-spacing:4px}
+.red{background:#ff1212;min-height:100vh;padding:80px 20px;display:flex;flex-direction:column;align-items:center;z-index:4}
+.red-inner{width:100%;max-width:1100px}
+.big{font-family:Syne;font-size:56px;line-height:0.9;color:#000;font-weight:800}.big span{color:#fff}
+.sub{margin-top:28px;max-width:520px}.sub h3{font-family:Syne;font-size:22px;color:#000}.sub p{font-size:13px;margin-top:12px;line-height:1.6;color:#000}
+.box{margin-top:20px;background:#000;color:#fff;padding:22px;border-radius:14px;max-width:520px;font-size:13px;line-height:1.7}.box b{color:#ff1a1a}
+.join{background:#08090d;padding:80px 20px;text-align:center;min-height:100vh}.join-inner{max-width:640px;margin:0 auto}.join img.main{width:240px;margin:0 auto 18px;display:block}.join h2{font-family:Syne;font-size:36px}.join p{font-size:13px;opacity:0.6;margin:12px auto 22px;max-width:440px}
+.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.reveal{opacity:0;transform:translateY(30px);transition:0.7s ease}.reveal.active{opacity:1;transform:translateY(0)}
+footer{padding:30px 20px;text-align:center;font-size:10px;opacity:0.25}
+</style>
+</head>
+<body>
+<div class="nav">
+<a class="logo" href="#"><img src="logo.webp"> KLOB</a>
+<div style="display:flex;gap:8px">
+<a class="btn" href="https://x.com/klobcoin" target="_blank">X @klobcoin</a>
+<a class="btn" href="https://t.me/klobcoin" target="_blank">JOIN</a>
+<a class="btn btn-lime" href="https://pump.fun" target="_blank">BUY $KLOB</a>
+</div>
+</div>
+
+<section class="hero">
+<div class="hero-title"><h1>KLOB</h1><p>Giving back to the hood.</p></div>
+<div class="klob-wrap"><img class="klob-img" id="klobHero" src="logo.webp"></div>
+<div class="water"></div>
+<div class="scroll"><span>SCROLL</span><div style="width:1px;height:20px;background:white"></div></div>
+</section>
+
+<section class="red">
+<div class="red-inner">
+<div class="big reveal">Meet <span>KLOB.</span><br>He runs the hood.</div>
+<div class="sub reveal"><h3>A test: is it the platform, or the people?</h3><p>Everyone says memes on Robinhood Chain are cooked. Bundles, dev dumps, and you end up as exit liquidity. So we built KLOB the honest way.</p></div>
+<div class="box reveal"><b>No bundle</b> - Nobody grabbed 30% before you.<br><br><b>No utility</b> - No app, no fake roadmap. Just a lobster from the hood.<br><br><b>No team bag</b> waiting to dump.<br><br>Pure community coin. If this fails, it was never the platform.</div>
+</div>
+</section>
+
+<section class="join">
+<div class="join-inner">
+<img class="main reveal" src="logo.webp">
+<h2 class="reveal">Join the hood.</h2>
+<p class="reveal">Follow @klobcoin, set the PFP, post memes, bring your friends.</p>
+<div class="cta reveal">
+<a class="btn btn-lime" style="padding:12px 22px" href="https://x.com/klobcoin" target="_blank">FOLLOW @klobcoin</a>
+<a class="btn btn-lime" style="padding:12px 22px" href="https://t.me/klobcoin" target="_blank">JOIN TELEGRAM</a>
+</div>
+<div class="cta reveal" style="margin-top:12px"><a class="btn" style="border-color:#d9ff00;color:#d9ff00" href="https://x.com/klobcoin">PFP BUILDER</a><a class="btn" href="#">MEME KIT</a></div>
+<img class="reveal" style="width:100%;margin-top:48px;border-radius:12px" src="banner.webp">
+<footer>© 2026 $KLOB - @klobcoin - Giving back to the hood - Robinhood Chain</footer>
+</div>
+</section>
+
+<script>
+var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add("active")})},{threshold:0.15});
+document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
+window.addEventListener("scroll",function(){var y=window.scrollY;var img=document.getElementById("klobHero");if(img)img.style.transform="translateY("+(y*0.18)+"px)"});
+</script>
+</body>
+</html>
